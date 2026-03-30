@@ -1,0 +1,3 @@
+RedHat:
+  package_name: redcloak
+  service_name: redcloak

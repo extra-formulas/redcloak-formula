@@ -1,0 +1,10 @@
+
+redcloak:
+  use: True		# If absent, the formula won't do anything at all. If True, installs and starts Cisco AMP. If False, disables and removes Cisco AMP.
+  package_file: 'salt:///path/to_the/installer/package.ext'		# This path would be fed to you package manager on installation time.
+																# You won't need this if you install cisco_amp from a repo.
+
+### Overrides for the defaults ###
+redcloak:
+  package_name:	name_of_the_package		# The name of the package in your package manager
+  service_name: name-of-the-service		# The name of the service in systemd/sysinit/upstart/etc.
